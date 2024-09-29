@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "ba09cf14-5684-4cb3-b13d-15cf51b2d634",
+		"name": "Jobms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38390331"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/jobs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Company3 software engineer 3\",\r\n    \"description\":\"Test Description\",\r\n    \"minSalary\":\"30000\",\r\n    \"maxSalary\":\"40000\",\r\n    \"location\":\"pune\",\r\n    \"companyId\":1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/jobs"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081jobs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/jobs"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/jobs/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/jobs/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/jobs/3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8081/jobs/3"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/jobs/3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8081/jobs/3"
+			},
+			"response": []
+		}
+	]
+}
